@@ -6,7 +6,7 @@
 - **技术栈**: Vue 3 + Vite + Tailwind CSS v4 + SCSS
 - **包管理器**: Yarn
 - **创建时间**: 2026-06-20
-- **最后更新**: 2026-06-20 00:35
+- **最后更新**: 2026-06-20 01:25
 
 ## 技术需求摘要
 
@@ -45,6 +45,7 @@
 | TASK-006 | 实现App.vue主逻辑 | 前端 | 业务逻辑 | P0 | ✅ 已完成 | [docs/dev_logs/TASK-006.md](docs/dev_logs/TASK-006.md) | src/App.vue | 2026-06-20 00:35 |
 | TASK-007 | 创建情绪数据文件 | 前端 | 数据层 | P0 | ✅ 已完成 | [docs/dev_logs/TASK-007.md](docs/dev_logs/TASK-007.md) | src/data/emotions.js | 2026-06-20 00:23 |
 | TASK-008 | 启动开发服务器 | DevOps | 开发环境 | P0 | ✅ 已完成 | [docs/dev_logs/TASK-008.md](docs/dev_logs/TASK-008.md) | http://localhost:5173/ | 2026-06-20 00:35 |
+| TASK-009 | 组件化重构 | 前端 | 组件开发 | P0 | ✅ 已完成 | [docs/dev_logs/TASK-009.md](docs/dev_logs/TASK-009.md) | MessageWall, DiaryView, MusicPlayer, IntensitySlider | 2026-06-20 01:25 |
 
 ---
 
@@ -58,7 +59,11 @@ hole3minute/
 │   ├── components/                # 组件目录
 │   │   ├── EmotionCard.vue        # 情绪卡牌组件
 │   │   ├── ActionCard.vue         # 动作卡片组件
-│   │   └── BreathingGuide.vue     # 深呼吸引导组件
+│   │   ├── BreathingGuide.vue     # 深呼吸引导组件
+│   │   ├── IntensitySlider.vue     # 程度滑动条组件
+│   │   ├── MessageWall.vue        # 树洞消息墙组件
+│   │   ├── DiaryView.vue          # 情绪日记组件
+│   │   └── MusicPlayer.vue        # 音乐播放器组件
 │   ├── data/                      # 数据目录
 │   │   └── emotions.js            # 情绪数据
 │   └── assets/                    # 资源目录
@@ -70,14 +75,7 @@ hole3minute/
 │   ├── 开发计划.md                 # 开发计划
 │   ├── 树洞·3分钟情绪急救箱.html  # 参考原型
 │   └── dev_logs/                   # 开发日志
-│       ├── TASK-001.md           # 初始化Vue项目
-│       ├── TASK-002.md           # 配置Tailwind CSS和SCSS
-│       ├── TASK-003.md           # 创建EmotionCard组件
-│       ├── TASK-004.md           # 创建ActionCard组件
-│       ├── TASK-005.md           # 创建BreathingGuide组件
-│       ├── TASK-006.md           # 实现App.vue主逻辑
-│       ├── TASK-007.md           # 创建情绪数据文件
-│       └── TASK-008.md           # 启动开发服务器
+│       ├── TASK-001.md ~ TASK-009.md
 ├── INDEX.md                       # 项目总控索引（本文件）
 ├── vite.config.js                # Vite 配置
 ├── package.json                   # 依赖清单
@@ -93,13 +91,11 @@ hole3minute/
 
 | 任务ID | 任务名称 | 优先级 | 状态 | 依赖 |
 |--------|---------|--------|------|------|
-| TASK-009 | 完善留言提交逻辑 | P0 | ⏳ 待执行 | 无 |
-| TASK-010 | 实现消息墙实时更新 | P0 | ⏳ 待执行 | TASK-009 |
-| TASK-011 | 实现音乐播放功能 | P0 | ⏳ 待执行 | 无 |
-| TASK-012 | 添加播放进度条 | P1 | ⏳ 待执行 | TASK-011 |
-| TASK-013 | 优化情绪日记展示 | P1 | ⏳ 待执行 | 无 |
-| TASK-014 | 实现 localStorage 持久化 | P2 | ⏳ 待执行 | TASK-013 |
-| TASK-015 | 动画过渡效果 | P1 | ⏳ 待执行 | 无 |
+| TASK-010 | 音乐真实播放（接入真实音频API） | P1 | ⏳ 待执行 | 无 |
+| TASK-011 | localStorage 数据持久化 | P1 | ⏳ 待执行 | 无 |
+| TASK-012 | 单元测试 | P2 | ⏳ 待执行 | 无 |
+| TASK-013 | E2E 测试 | P2 | ⏳ 待执行 | TASK-012 |
+| TASK-014 | 生产构建优化 | P2 | ⏳ 待执行 | 无 |
 
 ### 相关文档
 
