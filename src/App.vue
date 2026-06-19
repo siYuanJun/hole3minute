@@ -1,4 +1,5 @@
 <template>
+  <Analytics />
   <div class="app">
     <!-- Theme Toggle Button -->
     <button class="theme-toggle" :class="themeClass" @click="toggleTheme">
@@ -231,6 +232,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { Analytics } from '@vercel/analytics/vue'
 import EmotionCard from './components/EmotionCard.vue'
 import ActionCard from './components/ActionCard.vue'
 import BreathingGuide from './components/BreathingGuide.vue'
