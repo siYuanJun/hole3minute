@@ -37,14 +37,14 @@
 
 | 任务ID | 任务名称 | 类型 | 阶段 | 优先级 | 状态 | 日志文件 | 产出物 | 完成时间 |
 |--------|---------|------|------|--------|------|---------|--------|----------|
-| TASK-001 | 初始化Vue项目 | 前端 | 项目初始化 | P0 | ✅ 已完成 | [logs/TASK-001.md](logs/TASK-001.md) | vite.config.js, index.html | 2026-06-20 00:26 |
-| TASK-002 | 配置Tailwind CSS和SCSS | 前端 | 样式配置 | P0 | ✅ 已完成 | [logs/TASK-002.md](logs/TASK-002.md) | src/assets/styles/main.scss | 2026-06-20 00:25 |
-| TASK-003 | 创建EmotionCard组件 | 前端 | 组件开发 | P0 | ✅ 已完成 | [logs/TASK-003.md](logs/TASK-003.md) | src/components/EmotionCard.vue | 2026-06-20 00:26 |
-| TASK-004 | 创建ActionCard组件 | 前端 | 组件开发 | P0 | ✅ 已完成 | [logs/TASK-004.md](logs/TASK-004.md) | src/components/ActionCard.vue | 2026-06-20 00:27 |
-| TASK-005 | 创建BreathingGuide组件 | 前端 | 组件开发 | P0 | ✅ 已完成 | [logs/TASK-005.md](logs/TASK-005.md) | src/components/BreathingGuide.vue | 2026-06-20 00:28 |
-| TASK-006 | 实现App.vue主逻辑 | 前端 | 业务逻辑 | P0 | ✅ 已完成 | [logs/TASK-006.md](logs/TASK-006.md) | src/App.vue | 2026-06-20 00:35 |
-| TASK-007 | 创建情绪数据文件 | 前端 | 数据层 | P0 | ✅ 已完成 | [logs/TASK-007.md](logs/TASK-007.md) | src/data/emotions.js | 2026-06-20 00:23 |
-| TASK-008 | 启动开发服务器 | DevOps | 开发环境 | P0 | ✅ 已完成 | [logs/TASK-008.md](logs/TASK-008.md) | http://localhost:5173/ | 2026-06-20 00:35 |
+| TASK-001 | 初始化Vue项目 | 前端 | 项目初始化 | P0 | ✅ 已完成 | [docs/dev_logs/TASK-001.md](docs/dev_logs/TASK-001.md) | vite.config.js, index.html | 2026-06-20 00:26 |
+| TASK-002 | 配置Tailwind CSS和SCSS | 前端 | 样式配置 | P0 | ✅ 已完成 | [docs/dev_logs/TASK-002.md](docs/dev_logs/TASK-002.md) | src/assets/styles/main.scss | 2026-06-20 00:25 |
+| TASK-003 | 创建EmotionCard组件 | 前端 | 组件开发 | P0 | ✅ 已完成 | [docs/dev_logs/TASK-003.md](docs/dev_logs/TASK-003.md) | src/components/EmotionCard.vue | 2026-06-20 00:26 |
+| TASK-004 | 创建ActionCard组件 | 前端 | 组件开发 | P0 | ✅ 已完成 | [docs/dev_logs/TASK-004.md](docs/dev_logs/TASK-004.md) | src/components/ActionCard.vue | 2026-06-20 00:27 |
+| TASK-005 | 创建BreathingGuide组件 | 前端 | 组件开发 | P0 | ✅ 已完成 | [docs/dev_logs/TASK-005.md](docs/dev_logs/TASK-005.md) | src/components/BreathingGuide.vue | 2026-06-20 00:28 |
+| TASK-006 | 实现App.vue主逻辑 | 前端 | 业务逻辑 | P0 | ✅ 已完成 | [docs/dev_logs/TASK-006.md](docs/dev_logs/TASK-006.md) | src/App.vue | 2026-06-20 00:35 |
+| TASK-007 | 创建情绪数据文件 | 前端 | 数据层 | P0 | ✅ 已完成 | [docs/dev_logs/TASK-007.md](docs/dev_logs/TASK-007.md) | src/data/emotions.js | 2026-06-20 00:23 |
+| TASK-008 | 启动开发服务器 | DevOps | 开发环境 | P0 | ✅ 已完成 | [docs/dev_logs/TASK-008.md](docs/dev_logs/TASK-008.md) | http://localhost:5173/ | 2026-06-20 00:35 |
 
 ---
 
@@ -66,16 +66,18 @@ hole3minute/
 │           └── main.scss          # 主样式文件
 ├── docs/                          # 文档目录
 │   ├── PRD-树洞·3分钟情绪急救箱.md
-│   └── 树洞·3分钟情绪急救箱.html
-├── logs/                          # 任务日志目录
-│   ├── TASK-001.md               # 初始化Vue项目
-│   ├── TASK-002.md               # 配置Tailwind CSS和SCSS
-│   ├── TASK-003.md               # 创建EmotionCard组件
-│   ├── TASK-004.md               # 创建ActionCard组件
-│   ├── TASK-005.md               # 创建BreathingGuide组件
-│   ├── TASK-006.md               # 实现App.vue主逻辑
-│   ├── TASK-007.md               # 创建情绪数据文件
-│   └── TASK-008.md               # 启动开发服务器
+│   ├── PRD-技术需求.md            # 技术需求文档
+│   ├── 开发计划.md                 # 开发计划
+│   ├── 树洞·3分钟情绪急救箱.html  # 参考原型
+│   └── dev_logs/                   # 开发日志
+│       ├── TASK-001.md           # 初始化Vue项目
+│       ├── TASK-002.md           # 配置Tailwind CSS和SCSS
+│       ├── TASK-003.md           # 创建EmotionCard组件
+│       ├── TASK-004.md           # 创建ActionCard组件
+│       ├── TASK-005.md           # 创建BreathingGuide组件
+│       ├── TASK-006.md           # 实现App.vue主逻辑
+│       ├── TASK-007.md           # 创建情绪数据文件
+│       └── TASK-008.md           # 启动开发服务器
 ├── INDEX.md                       # 项目总控索引（本文件）
 ├── vite.config.js                # Vite 配置
 ├── package.json                   # 依赖清单
@@ -87,13 +89,24 @@ hole3minute/
 
 ## 下一步计划
 
-### 待完成功能（基于 PRD）
-| 功能 | 优先级 | 说明 |
-|------|--------|------|
-| 单元测试 | P1 | 使用 Vitest 进行组件测试 |
-| E2E 测试 | P2 | 使用 Playwright 进行端到端测试 |
-| 构建优化 | P2 | 优化生产构建 |
-| 文档完善 | P1 | 生成模块设计文档 |
+### 待完善功能
+
+| 任务ID | 任务名称 | 优先级 | 状态 | 依赖 |
+|--------|---------|--------|------|------|
+| TASK-009 | 完善留言提交逻辑 | P0 | ⏳ 待执行 | 无 |
+| TASK-010 | 实现消息墙实时更新 | P0 | ⏳ 待执行 | TASK-009 |
+| TASK-011 | 实现音乐播放功能 | P0 | ⏳ 待执行 | 无 |
+| TASK-012 | 添加播放进度条 | P1 | ⏳ 待执行 | TASK-011 |
+| TASK-013 | 优化情绪日记展示 | P1 | ⏳ 待执行 | 无 |
+| TASK-014 | 实现 localStorage 持久化 | P2 | ⏳ 待执行 | TASK-013 |
+| TASK-015 | 动画过渡效果 | P1 | ⏳ 待执行 | 无 |
+
+### 相关文档
+
+| 文档 | 路径 | 说明 |
+|------|------|------|
+| 技术需求文档 | [docs/PRD-技术需求.md](docs/PRD-技术需求.md) | 从PRD转化的技术实现方案 |
+| 开发计划 | [docs/开发计划.md](docs/开发计划.md) | 详细的任务规划和里程碑 |
 
 ---
 

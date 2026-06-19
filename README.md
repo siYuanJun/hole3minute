@@ -83,7 +83,9 @@ src/
 ## 📝 开发文档
 
 - [INDEX.md](INDEX.md) - 项目总控索引
-- [logs/](logs/) - 开发任务日志
+- [docs/dev_logs/](docs/dev_logs/) - 开发任务日志
+- [docs/PRD-技术需求.md](docs/PRD-技术需求.md) - 技术需求文档
+- [docs/开发计划.md](docs/开发计划.md) - 开发计划
 - [docs/PRD-树洞·3分钟情绪急救箱.md](docs/PRD-树洞·3分钟情绪急救箱.md) - 产品需求文档
 
 ## ⚠️ 注意事项
