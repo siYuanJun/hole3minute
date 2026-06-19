@@ -1,5 +1,97 @@
-# Vue 3 + Vite
+# 🌳 树洞·3分钟情绪急救箱
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+专为14-30岁青少年设计的情绪急救工具——当情绪上头时，选一个情绪标签，系统给出3个30秒能做完的具体动作，先止痛再谈长程。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## ✨ 功能特点
+
+| 功能 | 说明 |
+|------|------|
+| 情绪选择 | 5种情绪卡牌（焦虑/愤怒/孤独/低落/迷茫） |
+| 程度调节 | 1-5级滑动条，智能匹配动作推荐 |
+| 动作推荐 | 根据情绪和程度，推荐3个具体动作 |
+| 深呼吸引导 | 60秒4-7-8呼吸法动画 |
+| 匿名留言 | 隐私保护，不存储任何个人信息 |
+| 树洞消息墙 | 看到"其他人也在经历类似的情绪" |
+| 情绪日记 | 7天情绪趋势统计 |
+| 音乐推荐 | 4种心情（平静/治愈/振奋/释放） |
+
+## 🚀 快速开始
+
+### 安装依赖
+
+```bash
+yarn install
+```
+
+### 启动开发服务器
+
+```bash
+yarn dev
+```
+
+打开浏览器访问 http://localhost:5173/
+
+### 构建生产版本
+
+```bash
+yarn build
+```
+
+## 🛠 技术栈
+
+- **Vue 3** - 渐进式 JavaScript 框架
+- **Vite** - 下一代前端构建工具
+- **Tailwind CSS v4** - 原子化 CSS 框架
+- **SCSS** - CSS 预处理器
+
+## 📁 项目结构
+
+```
+src/
+├── App.vue                    # 主应用组件
+├── main.js                    # 入口文件
+├── components/                # 组件目录
+│   ├── EmotionCard.vue        # 情绪卡牌
+│   ├── ActionCard.vue         # 动作卡片
+│   └── BreathingGuide.vue     # 深呼吸引导
+├── data/                      # 数据目录
+│   └── emotions.js            # 情绪数据
+└── assets/                    # 资源目录
+    └── styles/
+        └── main.scss          # 主样式
+```
+
+## 🎨 主题配色
+
+| 情绪 | 颜色 | 场景 |
+|------|------|------|
+| 💙 焦虑 | #93C5FD | 考试压力、工作焦虑 |
+| 💔 愤怒 | #FCA5A5 | 情绪激动、需要发泄 |
+| 🤍 孤独 | #7DD3FC | 独处时刻、想找人聊 |
+| 💛 低落 | #FDBA74 | 缺乏动力、情绪疲惫 |
+| 💜 迷茫 | #C4B5FD | 方向不明、选择困难 |
+
+支持两种主题：薰衣草紫（默认）和莫兰迪治愈系
+
+## 🔒 隐私说明
+
+- 本工具**不存储任何个人信息**
+- 所有数据仅存在于浏览器内存中
+- 刷新页面后留言将消失
+- 无需注册、无需登录
+
+## 📝 开发文档
+
+- [INDEX.md](INDEX.md) - 项目总控索引
+- [logs/](logs/) - 开发任务日志
+- [docs/PRD-树洞·3分钟情绪急救箱.md](docs/PRD-树洞·3分钟情绪急救箱.md) - 产品需求文档
+
+## ⚠️ 注意事项
+
+- 本工具仅提供**即时情绪缓解**，不替代专业心理咨询
+- 如情绪持续低落超过2周，建议寻求专业帮助
+- 深呼吸练习有助于快速放松，但不应作为长期解决方案
+
+## 📄 License
+
+MIT License
