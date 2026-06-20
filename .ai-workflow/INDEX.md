@@ -77,6 +77,9 @@ hole3minute/
 │   └── dev_logs/                   # 开发日志
 │       ├── TASK-001.md ~ TASK-009.md
 ├── INDEX.md                       # 项目总控索引（本文件）
+├── STATUS.md                      # 项目状态文档
+├── CHANGELOG.md                   # 变更日志
+├── README.md                      # 项目说明
 ├── vite.config.js                # Vite 配置
 ├── package.json                   # 依赖清单
 ├── yarn.lock                      # Yarn 锁定文件
